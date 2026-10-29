@@ -1,0 +1,7 @@
+*.pem
+*.key
+state.yaml
+state.v1.bak
+private/
+deployment/
+*.tar.gz
