@@ -1,0 +1,18 @@
+name: Bifrost Maintenance
+version: dev-2026-10-28-maint.1
+slug: bifrost_maintenance
+description: Personal Bifrost maintenance build with the retained mDNS fix and tested dependency updates.
+url: https://github.com/gmaclean1981/bifrost-hassio
+arch:
+  - amd64
+stage: experimental
+startup: services
+boot: manual
+init: false
+host_network: true
+map:
+  - config:rw
+privileged:
+  - NET_ADMIN
+apparmor: false
+webui: http://[HOST]:[PORT:80]/frontend
